@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API-TRACKER</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>Tracker Details</center>
+    </h1>
+    <br><br>
+    <center>
+        <button onclick="location.href='{% url 'script' %}'">Save Tracker Data</button>
+        <button onclick="location.href='{% url 'location_script' %}'">Save Location Data</button>
+    </center>
+    <br>
+    <br>
+    <!-- <table border="1">
+        <tr>
+            <th>Action</th>
+            <th>IMEI</th>
+            <th>Device UUID</th>
+            <th>Customer UUID</th>
+            <th>First_Name</th>
+            <th>Last_Name</th>
+            <th>Device Type Description</th>
+            <th>Vin</th>
+            <th>Make</th>
+            <th>Model</th>
+            <th>Year</th>
+            <th>Eld Vehicle Id</th>
+            <th>Driver Id</th>
+            <th>Group Id</th>
+        </tr>
+        {% for i in tracker_response %}
+
+        <tr>
+            <td><button>
+                    <li style="list-style-type: none;"><a href="location/{{i.imei}}">View</a></li>
+                </button></td>
+            <td>{{i.imei}}</td>
+            <td>{{i.deviceUUID}}</td>
+            <td>{{i.customerUUID}}</td>
+            <td>{{i.firstName}}</td>
+            <td>{{i.lastName}}</td>
+            <td>{{i.deviceTypeDescription}}</td>
+            <td>{{i.vin}}</td>
+            <td>{{i.make}}</td>
+            <td>{{i.model}}</td>
+            <td>{{i.year}}</td>
+            <td>{{i.eldVehicleId}}</td>
+            <td>{{i.driverId}}</td>
+            <td>{{i.groupId}}
+            </td>
+        </tr>
+
+        {% empty %}
+        <tr>
+            <td colspan="14">
+                <center>
+                    <h1>--- No Record Found ---</h1>
+                </center>
+            </td>
+        </tr>
+        {% endfor %}
+    </table> -->
+</body>
+
+</html>
